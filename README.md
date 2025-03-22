@@ -106,44 +106,44 @@ Güvenlik ayarları verilerinizi zarara, hırsızlığa ve yetkisiz kullanıma k
 ***
 
 # Privacy :lock:
-Privacy features limit the amount of data companies can collect about you.
+Gizlilik özellikleri, şirketlerin hakkınızda toplayabileceği veri miktarını sınırlar.
 
-Because privacy is a [spectrum](https://blog.thenewoil.org/the-privacy-myth-binary-vs-spectrum), what you need varies on your [threat model](https://thenewoil.org/en/guides/prologue/threat-model/), interest, and skillset.<sup>^[*why should I care? I have nothing to hide*](https://medium.com/@FabioAEsteves/i-have-nothing-to-hide-why-should-i-care-about-my-privacy-f488281b8f1d)</sup>
+Gizlilik bir [spektrum](https://blog.thenewoil.org/the-privacy-myth-binary-vs-spectrum) olduğundan, neye ihtiyacınız olduğu [tehdit modelinize](https://thenewoil.org/en/guides/prologue/threat-model/), ilgi alanınıza ve beceri setinize göre değişir.<sup>^[*neden önemsemeliyim? Saklayacak bir şeyim yok*](https://medium.com/@FabioAEsteves/i-have-nothing-to-hide-why-should-i-care-about-my-privacy-f488281b8f1d)</sup>
 
-## Blocklists <sup><sup>[1](https://github.com/nextdns/blocklists/tree/main/blocklists)</sup></sup>
+## Engelleme Listeleri <sup><sup>[1](https://github.com/nextdns/blocklists/tree/main/blocklists)</sup></sup>
 
-Blocklists filter out ads, [trackers](https://www.freecodecamp.org/news/what-you-should-know-about-web-tracking-and-how-it-affects-your-online-privacy-42935355525/), and malicious sites. Hundreds of volunteers contribute to these lists in the [open-source](https://opensource.com/resources/what-open-source) community, and they are the undercover heroes who make blocking ads at scale possible.
+Engelleme listeleri reklamları, [izleyicileri](https://www.freecodecamp.org/news/what-you-should-know-about-web-tracking-and-how-it-affects-your-online-privacy-42935355525/) ve kötü amaçlı siteleri filtreler. Yüzlerce gönüllü [open-source](https://opensource.com/resources/what-open-source) topluluğunda bu listelere katkıda bulunur ve onlar reklamları geniş ölçekte engellemeyi mümkün kılan gizli kahramanlardır.
 
-We recommend you **remove** the [NextDNS Ads & Trackers Blocklist](https://github.com/nextdns/blocklists/blob/main/blocklists/nextdns-recommended.json) and **add** the [minimum](https://www.reddit.com/r/nextdns/comments/1048xeg/do_you_use_nextdns_blocklist_as_the_primary/j33wnz2/?context=3) number of useful lists.
+NextDNS Ads & Trackers Blocklist](https://github.com/nextdns/blocklists/blob/main/blocklists/nextdns-recommended.json)'i **kaldırmanızı** ve [minimum](https://www.reddit.com/r/nextdns/comments/1048xeg/do_you_use_nextdns_blocklist_as_the_primary/j33wnz2/?context=3) sayıda yararlı listeyi **eklemenizi** öneririz.
 
-### Which blocklist should I use?
+### Hangi engelleme listesini kullanmalıyım?
 
-A great question to ask is: "How much do I want to deal with the inconveniences of [false positives](https://csrc.nist.gov/glossary/term/false_positive)?"
+Sorulması gereken harika bir soru şudur: “[Yanlış pozitiflerin](https://csrc.nist.gov/glossary/term/false_positive) rahatsızlıklarıyla ne kadar uğraşmak istiyorum?”
 
-Here are the suggested blocklists, based on past issues and observations:
+İşte geçmiş sorunlara ve gözlemlere dayanarak önerilen engelleme listeleri:
 
-|     **Blocklists**   |                              **Rationale**                                             |
+|     **Engelleme Listeleri**   |                              **Gerekçe**                                             |
 |:--------------------:|:--------------------------------------------------------------------------------------:|
-| HaGeZi - <br>Multi **NORMAL**<sup>[1](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#multi)</sup> <br>+ <br>OISD<sup>[2](https://www.reddit.com/r/nextdns/comments/1ia9bz0/comment/mdy61v9/)</sup> | Block tracker, ad, and badware requests without issues ([set-and-forget](https://glosbe.com/en/en/set-and-forget)). |
-| HaGeZi - <br>Multi **PRO**<sup>[3](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#pro)</sup> | Block more requests, usually without issues (recommended). |
-| HaGeZi - <br>Multi **PRO++**<sup>[4](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#proplus)</sup> | Block more requests at the risk of site breakage. <br> [Report](https://github.com/hagezi/dns-blocklists/issues/new/choose) occasional site and app issues. |
+| HaGeZi - <br>Multi **NORMAL**<sup>[1](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#multi)</sup> <br>+ <br>OISD<sup>[2](https://www.reddit.com/r/nextdns/comments/1ia9bz0/comment/mdy61v9/)</sup> | İzleyici, reklam ve kötü amaçlı yazılım isteklerini sorunsuz bir şekilde engelleyin ([kur-ve-unut](https://glosbe.com/en/en/set-and-forget)). |
+| HaGeZi - <br>Multi **PRO**<sup>[3](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#pro)</sup> | Genellikle sorunsuz bir şekilde daha fazla isteği engelleyin (önerilir)). |
+| HaGeZi - <br>Multi **PRO++**<sup>[4](https://github.com/hagezi/dns-blocklists/blob/main/statistics.md#proplus)</sup> | Sitenin bozulması riskine karşı daha fazla isteği engelleyin. <br> [[şikayey](https://github.com/hagezi/dns-blocklists/issues/new/choose) edebilirsiniz ara sıra site ve uygulama sorunları. |
 
 > [!TIP]
-> Use different blocklists on separate DNS profiles (e.g., NORMAL for your router and PRO++ for your web browser).
+> Ayrı DNS profillerinde farklı engelleme listeleri kullanın (örneğin, yönlendiriciniz için NORMAL ve web tarayıcınız için PRO++).
 
-You can also check out Hagezi's own [recommendations](https://github.com/hagezi/dns-blocklists/tree/main#whatshouldiuse).
+Hagezi'nin kendi [tavsiyelerine](https://github.com/hagezi/dns-blocklists/tree/main#whatshouldiuse) de göz atabilirsiniz.
 
-### Why Hagezi?
-[Hagezi](https://github.com/hagezi/dns-blocklists) block ads, trackers, native device trackers, and badware. He maintains a sensible allowlist, handles false positives quickly, and communicates known issues to blocklists maintainers. Hagezi's primary DNS lists combine multiple [sources](https://github.com/hagezi/dns-blocklists/wiki/FAQ#-which-sources-are-used-for-the-lists-and-how-are-the-lists-compiled-on-the-basis-of-these-sources) including respected community blocklists like [OISD](https://oisd.nl/), [Steven Black](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts), [1Hosts](https://github.com/badmojr/1Hosts#safeguard-your-devices-against-pesky-ads-trackers-and-malware), [notrack](https://gitlab.com/quidsup/notrack#notrack), and [more](https://github.com/hagezi/dns-blocklists/blob/main/sources.md).
+### Neden Hagezi?
+[Hagezi](https://github.com/hagezi/dns-blocklists) reklamları, izleyicileri, yerel cihaz izleyicilerini ve kötü amaçlı yazılımları engeller. Mantıklı bir izin listesi tutar, yanlış pozitifleri hızlı bir şekilde ele alır ve bilinen sorunları engelleme listelerini koruyanlara iletir. Hagezi'nin birincil DNS listeleri, [OISD](https://oisd.nl/), [Steven Black](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts), [1Hosts](https://github.com/badmojr/1Hosts#safeguard-your-devices-against-pesky-ads-trackers-and-malware), [notrack](https://gitlab.com/quidsup/notrack#notrack) ve [bir çogu](https://github.com/hagezi/dns-blocklists/blob/main/sources.md) gibi saygın topluluk engelleme listeleri dahil olmak üzere birden fazla [kaynak](https://github.com/hagezi/dns-blocklists/wiki/FAQ#-which-sources-are-used-for-the-lists-and-how-are-the-lists-compiled-on-the-basis-of-these-sources) birleştirir.
 
-You may also wonder why other lists are not utilized. This is because many list maintainers:
-* do not remove [false positives](https://csrc.nist.gov/glossary/term/false_positive) and/or are no longer active <sup>[1](https://github.com/lightswitch05/hosts/issues/356) [2](https://github.com/EnergizedProtection/block/issues/916)</sup>
-* already [aggregate](https://www.reddit.com/r/nextdns/comments/ys3s1s/confused_about_blocklists/ivxdcd2/?context=3) common blocklists into their own list (Easylist/Fanboy, AdGuard, Steven Black, etc.) <sup>[1](https://github.com/badmojr/1Hosts/blob/master/-data/lists/assets.txt) [2](https://oisd.nl/includedlists/big/0) [3](https://github.com/jerryn70/GoodbyeAds/blob/master/Docs/Sources.md) [4](https://github.com/hagezi/dns-blocklists/blob/main/sources.md#sources) </sup>
-* offer no meaningful additional coverage when compared with the chart combinations above
+Diğer listelerin neden kullanılmadığını da merak edebilirsiniz. Bunun nedeni birçok liste yöneticisinin:
+* [Yanlış pozitifleri](https://csrc.nist.gov/glossary/term/false_positive) kaldırmayan ve/veya artık aktif olmayan <sup>[1](https://github.com/lightswitch05/hosts/issues/356) [2](https://github.com/EnergizedProtection/block/issues/916)</sup>
+* zaten [toplu](https://www.reddit.com/r/nextdns/comments/ys3s1s/confused_about_blocklists/ivxdcd2/?context=3) ortak engelleme listelerini kendi listelerine (Easylist/Fanboy, AdGuard, Steven Black, vb.) <sup>[1](https://github.com/badmojr/1Hosts/blob/master/-data/lists/assets.txt) [2](https://oisd.nl/includedlists/big/0) [3](https://github.com/jerryn70/GoodbyeAds/blob/master/Docs/Sources.md) [4](https://github.com/hagezi/dns-blocklists/blob/main/sources.md#sources) </sup>
+* Yukarıdaki tablo kombinasyonları ile karşılaştırıldığında anlamlı bir ek koruma sağlamaz.
 
-## Native Tracking Protection <sup><sup>[1](https://github.com/nextdns/native-tracking-domains/tree/main/domains)</sup></sup>
+## Yerel İzleme Koruması <sup><sup>[1](https://github.com/nextdns/native-tracking-domains/tree/main/domains)</sup></sup>
 
-Add all the device brands you use.
+Kullandığınız tüm cihaz markalarını ekleyin.
 
 <details>
 
@@ -158,47 +158,46 @@ Add all the device brands you use.
 
 </details>
 
-## Block Disguised Third-Party Trackers <sup><sup>[1](https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains) [2](https://www.reddit.com/r/nextdns/comments/10nenu3/disguised_trackers_are_blocked_regardless_of) [3](https://medium.com/nextdns/cname-cloaking-the-dangerous-disguise-of-third-party-trackers-195205dc522a) [4](https://arxiv.org/pdf/2102.09301.pdf) [5](https://tma.ifip.org/2020/wp-content/uploads/sites/9/2020/06/tma2020-camera-paper66.pdf) </sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Block Disguised Third-Party Trackers
+## Gizlenmiş Üçüncü Taraf İzleyicileri Engelle <sup><sup>[1](https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains) [2](https://www.reddit.com/r/nextdns/comments/10nenu3/disguised_trackers_are_blocked_regardless_of) [3](https://medium.com/nextdns/cname-cloaking-the-dangerous-disguise-of-third-party-trackers-195205dc522a) [4](https://arxiv.org/pdf/2102.09301.pdf) [5](https://tma.ifip.org/2020/wp-content/uploads/sites/9/2020/06/tma2020-camera-paper66.pdf) </sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Gizlenmiş üçüncü taraf izleyicileri engelle
 
-## Allow Affiliate & Tracking Links <sup><sup>[1](https://github.com/nextdns/click-tracking-domains) [2](https://x.com/NextDNS/status/1539229377560461312) </sup></sup>
+## Ortaklık ve İzleme Bağlantılarına İzin Ver <sup><sup>[1](https://github.com/nextdns/click-tracking-domains) [2](https://x.com/NextDNS/status/1539229377560461312) </sup></sup>
 > [!TIP]
-> Your IP address will automatically be hidden (via [TCP](https://educba.com/what-is-tcp-ip) [proxying](https://en.wikipedia.org/wiki/Proxy_server#/media/File:Proxy_concept_en.svg)) to preserve your privacy.<p>
+> Gizliliğinizi korumak için IP adresiniz otomatik olarak gizlenecektir ([TCP](https://educba.com/what-is-tcp-ip) [proxying](https://en.wikipedia.org/wiki/Proxy_server#/media/File:Proxy_concept_en.svg) aracılığıyla).<p>
 
 > [!WARNING]
-> Disabling this setting prevents some email links from opening properly.
+> Bu ayarın devre dışı bırakılması bazı e-posta bağlantılarının düzgün açılmasını engeller.
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Allow Affiliate & Tracking Links
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Ortaklık ve izleme bağlantılarına izin ver
 
 ***
 
-# Parental Control :family_man_woman_boy:
-## YouTube Restricted Mode
-![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Enforce YouTube Restricted Mode
-## Block Bypass Methods <sup><sup>[1](https://github.com/nextdns/dns-bypass-methods)</sup></sup>
-Block tools that can bypass NextDNS filtering, such as VPNs, proxies, Tor software, and encrypted DNS services.
+# Ebeveyn Kontrolü :family_man_woman_boy:
+## YouTube Kısıtlı Modu
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) YouTube Kısıtlı Mod'u zorunlu kıl
+## Atlatma Yöntemlerini Engelle <sup><sup>[1](https://github.com/nextdns/dns-bypass-methods)</sup></sup>
+VPN'ler, proxy'ler, Tor yazılımı ve şifreli DNS hizmetleri gibi NextDNS filtrelemesini atlayabilecek araçları engelleyin.
 > [!CAUTION]
-> Enabling this setting causes unintended behavior.
+> Bu ayarın etkinleştirilmesi istenmeyen davranışlara neden olur.
 
-![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Block Bypass Methods
-
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Atlatma yöntemlerini engelle
 ***
 
-# Denylist :no_entry:
+# Kara Liste :no_entry:
 
-Denylist entries are always blocked. These entries may further harden some profiles while not interfering with everyday browsing.
+Denylist girişleri her zaman engellenir. Bu girişler, günlük taramayı engellemeden bazı profilleri daha da zorlaştırabilir.
 
 ### iCloud Private Relay
 
-[iCloud Private Relay](https://support.apple.com/en-us/102602) can override DNS settings on devices, preventing NextDNS from protecting them.
+[iCloud Private Relay](https://support.apple.com/en-us/102602) cihazlardaki DNS ayarlarını geçersiz kılarak NextDNS'in onları korumasını engelleyebilir.
 
-Some DoH providers block this feature automatically.
+Bazı DoH sağlayıcıları bu özelliği otomatik olarak engeller.
 
 	mask.icloud.com
 	mask-h2.icloud.com
 	mask-canary.icloud.com
 
-And possibly:
+Ve muhtemelen:
 
   	apple-relay.cloudflare.com
     apple-relay.fastly-edge.com
@@ -209,17 +208,17 @@ And possibly:
 
 ***
 
-# Allowlist :white_check_mark:
+# Beyaz Liste :white_check_mark:
 
-Allowlist entries always resolve. These entries may be needed for aggressive DNS profiles to relax their rules.
+İzin listesi girdileri her zaman çözümlenir. Bu girdiler, agresif DNS profillerinin kurallarını gevşetmesi için gerekli olabilir.
 
 ### NextDNS
 
-Allow NextDNS itself in case a filterlist goes [haywire](https://help.nextdns.io/t/m1hs207/energized-ultimate-lists-blocking-nextdns) and blocks your access.
+Bir filtre listesinin [haywire](https://help.nextdns.io/t/m1hs207/energized-ultimate-lists-blocking-nextdns) gidip erişiminizi engellemesi durumunda NextDNS'in kendisine izin verin.
 
 	nextdns.io
 
-<details><summary>Click here to view more entries</summary>
+<details><summary>Click Daha çok girdi görmek için bana tıkla</summary>
 
 ### Facebook / Instagram <sup><sup>[1](https://github.com/jerryn70/GoodbyeAds/issues/309)</sup></sup> 
 
@@ -228,7 +227,7 @@ Allow NextDNS itself in case a filterlist goes [haywire](https://help.nextdns.io
 	i.instagram.com
 	b-graph.facebook.com
 
-If you're still having issues, try [these](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/share/facebook.txt):
+Eğer hala sorun yaşıyorsan, [bunları](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/share/facebook.txt) dene:
 	
 	connect.facebook.com
 	connect.facebook.net
@@ -236,13 +235,13 @@ If you're still having issues, try [these](https://raw.githubusercontent.com/hag
 	z-m-graph.facebook.com
 	graph-fallback.instagram.com
 
-### Apple device updates <sup><sup>[1](https://github.com/badmojr/1Hosts/issues/536) [2](https://github.com/badmojr/1Hosts/issues/562) [3](https://github.com/nextdns/metadata/pull/1132#issuecomment-1331733770)
+### Apple cihaz güncellemeleri <sup><sup>[1](https://github.com/badmojr/1Hosts/issues/536) [2](https://github.com/badmojr/1Hosts/issues/562) [3](https://github.com/nextdns/metadata/pull/1132#issuecomment-1331733770)
 
-A [known tracking domain](https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558), but it's needed for device updates.
+Bir [bilinen izleme alanı](https://gizmodo.com/apple-iphone-analytics-tracking-even-when-off-app-store-1849757558), ancak cihaz güncellemeleri için gereklidir.
 
 	xp.apple.com
 
-### Apple iMessage GIFs <sup><sup>[1](https://github.com/badmojr/1Hosts/issues/560)</sup></sup> / Spotlight Search <sup><sup>[2](https://github.com/badmojr/1Hosts/issues/562)</sup></sup> 
+### Apple iMessage GIFs <sup><sup>[1](https://github.com/badmojr/1Hosts/issues/560)</sup></sup> / Spotlight aramam <sup><sup>[2](https://github.com/badmojr/1Hosts/issues/562)</sup></sup> 
 
 	smoot.apple.com
 
@@ -253,24 +252,24 @@ A [known tracking domain](https://gizmodo.com/apple-iphone-analytics-tracking-ev
 
 ### Windows
 
-This [request](https://oisd.nl/excludes.php?w=settings-win.data.microsoft.com) is blocked when using NextDNS' [Native Tracking](https://github.com/yokoffing/NextDNS-Config#native-tracking-protection-1) list (Windows)
+Bu [istek](https://oisd.nl/excludes.php?w=settings-win.data.microsoft.com) NextDNS'in [Yerel İzleme](https://github.com/yokoffing/NextDNS-Config#native-tracking-protection-1) listesi kullanılırken engelleniyor (Windows)
 
 	settings-win.data.microsoft.com
 
-### Xbox achievements
+### Xbox başarımları
 
 	v10.events.data.microsoft.com
 	v20.events.data.microsoft.com
 
-### Xiaomi device updates
+### Xiaomi cihaz güncellemeleri
 
 	update.intl.miui.com
 
-### Xiaomi USB debugging (Security settings)
+### Xiaomi USB hata ayıklama (Güvenlik ayarları)
 
 	srv.sec.intl.miui.com
 
-### Google Nest usage metrics <sup><sup>[1](https://www.reddit.com/r/nextdns/comments/yzvnuw/nest_usage_metrics_being_blocked)</sup></sup> 
+### Google Nest kullanım metrikleri <sup><sup>[1](https://www.reddit.com/r/nextdns/comments/yzvnuw/nest_usage_metrics_being_blocked)</sup></sup> 
 
 	logsink.devices.nest.com
 
@@ -290,7 +289,7 @@ This [request](https://oisd.nl/excludes.php?w=settings-win.data.microsoft.com) i
 	us04logfiles.zoom.us
 	us04zpns.zoom.us
 
-### YouTube history
+### YouTube geçmiş
 
 	s.youtube.com
 
@@ -324,14 +323,14 @@ This [request](https://oisd.nl/excludes.php?w=settings-win.data.microsoft.com) i
 
 ### [Paramount+](https://www.paramountplus.com/)
 
-Paramount+ uses certain domains to display ads. These domains must be accessible to allow Paramount+ content to load (even for viewers with ad-free plans).
+Paramount+ reklamları görüntülemek için belirli etki alanlarını kullanır. Paramount+ içeriğinin yüklenebilmesi için bu alan adlarının erişilebilir olması gerekir (reklamsız planlara sahip izleyiciler için bile).
 
-:warning: However, because many sites use these domains for ads, allowing them could result in more ads being shown on other sites you visit.
+Uyarı: Ancak, birçok site bu etki alanlarını reklamlar için kullandığından, bunlara izin vermek ziyaret ettiğiniz diğer sitelerde daha fazla reklam gösterilmesine neden olabilir.
 
     imasdk.googleapis.com
     pubads.g.doubleclick.net
 
-Users have [reported](https://www.reddit.com/r/nextdns/comments/v84ag6/paramount_plus/) that the following domains also may need to be allowed:
+Kullanıcılar aşağıdaki alan adlarına da izin verilmesi gerekebileceğini [bildirmişlerdir](https://www.reddit.com/r/nextdns/comments/v84ag6/paramount_plus/):
 
     cbsaavideo.com
     cbsi.com
@@ -356,109 +355,120 @@ Users have [reported](https://www.reddit.com/r/nextdns/comments/v84ag6/paramount
 
 ***
 
-# Settings :gear:
+# Ayarlar :gear:
 
-## Logs
-**Storage location** → Switzerland
+## Günlükler
+**Depolama konumu** → İsviçve
 
-## Block Page
+## Engel Sayfası
 > [!CAUTION]
-> Enabling this setting may cause site navigation issues if the [NextDNS Root CA](https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca) is not on your devices. Also, this setting breaks [Paypal 2FA](https://github.com/hagezi/dns-blocklists/issues/2335), [iCloud Private Relay](https://help.nextdns.io/t/g9hdska), [Microsoft Teams](https://www.reddit.com/r/nextdns/comments/176u2x6/comment/k4pp3ti/?context=3), [Yahoo! Mail](https://github.com/hagezi/dns-blocklists/issues/269#issuecomment-1409644343), the NAVER app, [Hoyolab app](https://help.nextdns.io/t/g9yxqcd/nextdns-blocking-hoyolab), and possibly [banking apps](https://help.nextdns.io/t/83yxjgx/most-common-problem-with-nextdns).
+> [NextDNS Root CA](https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca) cihazlarınızda yoksa bu ayarın etkinleştirilmesi sitede gezinme sorunlarına neden olabilir. Ayrıca, bu ayar [Paypal 2FA](https://github.com/hagezi/dns-blocklists/issues/2335), [iCloud Private Relay](https://help.nextdns.io/t/g9hdska), [Microsoft Teams](https://www.reddit.com/r/nextdns/comments/176u2x6/comment/k4pp3ti/?context=3), [Yahoo! Mail](https://github.com/hagezi/dns-blocklists/issues/269#issuecomment-1409644343), NAVER uygulaması, [Hoyolab uygulaması](https://help.nextdns.io/t/g9yxqcd/nextdns-blocking-hoyolab) ve muhtemelen [bankacılık uygulamaları](https://help.nextdns.io/t/83yxjgx/most-common-problem-with-nextdns)'nı bozar.
 
-![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Enable Block Page
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Engel sayfasını etkinleştir
 
-## Anonymized EDNS Client Subnet <sup><sup>[1](https://help.nextdns.io/t/m1hmv04/what-is-edns-client-subnet-ecs) </sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Anonymized EDNS Client Subnet
-## Cache Boost <sup><sup>[1](https://www.reddit.com/r/nextdns/comments/girmcf/new_setting_cache_boost/)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Cache Boost
+## Anonimize EDNS İstemci Alt Ağı <sup><sup>[1](https://help.nextdns.io/t/m1hmv04/what-is-edns-client-subnet-ecs) </sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Anonimize EDNS İstemci Alt Ağı'nı etkinleştir
+## Önbellek Arttırma <sup><sup>[1](https://www.reddit.com/r/nextdns/comments/girmcf/new_setting_cache_boost/)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Önbellek arttırmayı etkinleştir
 
-## CNAME Flattening <sup><sup>[1](https://medium.com/nextdns/nextdns-added-cname-uncloaking-support-becomes-the-first-cross-platform-solution-to-the-problem-e3f437f84342) [2](https://developers.cloudflare.com/dns/cname-flattening/) [3](https://advancedweb.hu/what-is-cname-flattening-and-how-it-helps-redirecting-the-apex-domain) </sup></sup>
+## CNAME Düzleştirme <sup><sup>[1](https://medium.com/nextdns/nextdns-added-cname-uncloaking-support-becomes-the-first-cross-platform-solution-to-the-problem-e3f437f84342) [2](https://developers.cloudflare.com/dns/cname-flattening/) [3](https://advancedweb.hu/what-is-cname-flattening-and-how-it-helps-redirecting-the-apex-domain) </sup></sup>
 > [!WARNING]
-> Enabling this feature may break compatibility with [Yahoo! Mail](https://github.com/hagezi/dns-blocklists/issues/269#issuecomment-1409644343) and cause issues with certain blocklists.
+> Bu özelliğin etkinleştirilmesi [Yahoo! Mail](https://github.com/hagezi/dns-blocklists/issues/269#issuecomment-1409644343) ile uyumluluğu bozabilir ve belirli engelleme listelerinde sorunlara neden olabilir.
 
-![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Enable CNAME Flattening
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) CNAME düzleştirmeyi etkinleştir
 
 ## Web3 <sup><sup> [1](https://x.com/NextDNS/status/1491034351391305731) [2](https://gabygoldberg.notion.site/f7050e62461143d49345e7b46eb5576b)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Web3 → (optional)
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Web3'ü etkinleştir → (isteğe bağlı)
 
 ***
-# FAQ :question:
+# SSS :question:
 
-## How do I signup for NextDNS?
-Click [here](https://nextdns.io/?from=xujj63g5) to get started.
+## NextDNS'e nasıl kaydolabilirim?
+Başlamak için [buraya](https://nextdns.io/?from=xujj63g5) tıklayın
 
-## Why am I still seeing ads?
-Not all ads can be blocked at the DNS level.<sup>[1](https://www.reddit.com/r/nextdns/comments/14nsfhv/comment/jq982bi/?context=3) [2](https://www.reddit.com/r/nextdns/comments/13urdda/ads_on_manga_sites/)</sup> You will need an [ad blocker](https://github.com/yokoffing/NextDNS-Config#i-need-a-browser-with-ad-blocking-which-one-should-i-choose) to block what's leftover.
+## Neden hala reklam görüyorum?
+Tüm reklamlar DNS düzeyinde engellenemez.<sup>[1](https://www.reddit.com/r/nextdns/comments/14nsfhv/comment/jq982bi/?context=3) [2](https://www.reddit.com/r/nextdns/comments/13urdda/ads_on_manga_sites/)</sup> Arta kalanları engellemek için bir [reklam engelleyiciye](https://github.com/yokoffing/NextDNS-Config#i-need-a-browser-with-ad-blocking-which-one-should-i-choose) ihtiyacınız olacak.
 
-This is because not all ads come from third-party domains; some ads come directly from the site you're visiting, like [YouTube](https://discourse.pi-hole.net/t/how-do-i-block-ads-on-youtube/253/2). DNS blockers stop the resolution of a domain, and content blockers filter page content. Click [here](https://github.com/yokoffing/NextDNS-Config/tree/main#i-need-a-browser-with-ad-blocking-which-one-should-i-choose) to easily install a lightweight ad blocker.
+Bunun nedeni, tüm reklamların üçüncü taraf alan adlarından gelmemesidir; [YouTube](https://discourse.pi-hole.net/t/how-do-i-block-ads-on-youtube/253/2) gibi bazı reklamlar doğrudan ziyaret ettiğiniz siteden gelir. DNS engelleyiciler bir alan adının çözümlenmesini durdurur ve içerik engelleyiciler sayfa içeriğini filtreler. Hafif bir reklam engelleyiciyi kolayca yüklemek için [buraya](https://github.com/yokoffing/NextDNS-Config/tree/main#i-need-a-browser-with-ad-blocking-which-one-should-i-choose) tıklayın.
 
-## I need a browser with ad blocking. Which one should I choose?
-Choosing a browser is about as intimate as [choosing a starter Pokémon](https://www.youtube.com/watch?v=F_8htiBjTCY), so here's a few caveats:
-* The best browser on paper may not work well in real world usage.
-* Browsers are tools! Use a variety of browsers depending on what you need to do.
-* You should use various browsers (or browser profiles) for different areas of life (e.g., work, school, personal).
+## Reklam engelleme özelliğine sahip bir tarayıcıya ihtiyacım var. Hangisini seçmeliyim?
+Bir tarayıcı seçmek [başlangıç Pokémon'unu seçmek](https://www.youtube.com/watch?v=F_8htiBjTCY) kadar samimidir, bu yüzden burada birkaç uyarı var:
+* Kağıt üzerindeki en iyi tarayıcı gerçek dünya kullanımında iyi çalışmayabilir.
+* Tarayıcılar birer araçtır! Ne yapmanız gerektiğine bağlı olarak çeşitli tarayıcılar kullanın.
+* Yaşamın farklı alanları (örn. iş, okul, kişisel) için çeşitli tarayıcılar (veya tarayıcı profilleri) kullanmalısınız.
 
-We based the recommendations below on a combination of effectiveness, resource efficiency, features, and ease of use.
 
-| OS | Browser | Content Blocker |
+Aşağıdaki önerileri etkinlik, kaynak verimliliği, özellikler ve kullanım kolaylığının bir kombinasyonuna dayandırdık
+Reklam engelleme özelliğine sahip bir tarayıcıya ihtiyacım var. Hangisini seçmeliyim?
+Bir tarayıcı seçmek [başlangıç Pokémon'unu seçmek](https://www.youtube.com/watch?v=F_8htiBjTCY) kadar samimidir, bu yüzden burada birkaç uyarı var:
+* Kağıt üzerindeki en iyi tarayıcı gerçek dünya kullanımında iyi çalışmayabilir.
+* Tarayıcılar birer araçtır! Ne yapmanız gerektiğine bağlı olarak çeşitli tarayıcılar kullanın.
+* Yaşamın farklı alanları (örn. iş, okul, kişisel) için çeşitli tarayıcılar (veya tarayıcı profilleri) kullanmalısınız.
+
+| İşletim sistemi | Tarayıcı | İçerik Engelleyici |
 |---|---|---|
 | iOS | [Safari](https://www.privacyguides.org/en/mobile-browsers/#safari) | [AdGuard](https://www.privacyguides.org/en/browser-extensions/?h=adguard#adguard) |
-| Android | [Brave](https://www.privacyguides.org/en/mobile-browsers/#brave) | Built-in blocker |
-| Windows <br> macOS <br> Linux | [Firefox](https://www.mozilla.org/en-US/firefox/new/) (with [Betterfox](https://github.com/yokoffing/Betterfox#betterfox)) <p><p> [Brave](https://www.privacyguides.org/en/desktop-browsers/#brave) | [uBlock Origin](https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/) <p><p> Built-in blocker or [uBlock Origin](https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/) |  |
+| Android | [Brave](https://www.privacyguides.org/en/mobile-browsers/#brave) | Dahili engelleyici |
+| Windows <br> macOS <br> Linux | [Firefox](https://www.mozilla.org/en-US/firefox/new/) (with [Betterfox](https://github.com/yokoffing/Betterfox#betterfox)) <p><p> [Brave](https://www.privacyguides.org/en/desktop-browsers/#brave) | [uBlock Origin](https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/) <p><p> Dahili engelleyici veya [uBlock Origin](https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/) |  |
 
-At the end of the day, if you're using [NextDNS](https://nextdns.io/?from=xujj63g5) + any browser with an ad blocker, you have more coverage than most people.
+Günün sonunda, [NextDNS](https://nextdns.io/?from=xujj63g5) + reklam engelleyicili herhangi bir tarayıcı kullanıyorsanız, çoğu insandan daha fazla kapsama alanına sahipsiniz demektir.
 
-## Should I pay for NextDNS?
-For the rich features it provides, [NextDNS](https://nextdns.io/?from=xujj63g5) is very affordable at $19.90/year for unlimited devices. NextDNS pays for itself if it saves my family from a malicious incident.
+## NextDNS için ödeme yapmalı mıyım?
+Sağladığı zengin özellikler için [NextDNS](https://nextdns.io/?from=xujj63g5) sınırsız cihaz için 19,90 $/yıl ile çok uygun. NextDNS ailemi kötü niyetli bir olaydan kurtarırsa kendini amorti eder.
 
-## Does the amount of features enabled affect the speed of NextDNS?<sup>[1](https://github.com/yokoffing/NextDNS-Config/issues/12#issue-1465457977) [2](https://www.reddit.com/r/nextdns/comments/135utai/comment/jilbus8/?=&context=3)</sup>
+## Etkinleştirilen özelliklerin miktarı NextDNS'in hızını etkiliyor mu?<sup>[1](https://github.com/yokoffing/NextDNS-Config/issues/12#issue-1465457977) [2](https://www.reddit.com/r/nextdns/comments/135utai/comment/jilbus8/?=&context=3)</sup>
 
-The number of settings you toggle on will not affect your DNS latency.
+Açtığınız ayarların sayısı DNS gecikmenizi etkilemeyecektir.
 
-## Do I need to set DoH at browser-level if I already use NextDNS at system-level?
-Unless you use a separate profile for the browser, it is [not neccessary](https://www.reddit.com/r/nextdns/comments/yfjvqy/is_it_redundant_to_set_at_doh_at_browserlevel_if/iu3vjzt/?context=3). However, I recommend [setting it in your web browser](https://itechtics.com/dns-over-https/#how-to-enable-or-disable-dns-over-https-in-your-browsers) anyway. 
+## NextDNS'i sistem düzeyinde zaten kullanıyorsam DoH'u tarayıcı düzeyinde ayarlamam gerekir mi??
+Tarayıcı için ayrı bir profil kullanmadığınız sürece, [gerekli değil](https://www.reddit.com/r/nextdns/comments/yfjvqy/is_it_redundant_to_set_at_doh_at_browserlevel_if/iu3vjzt/?context=3). Ancak, [web tarayıcınızda ayarlamanızı](https://itechtics.com/dns-over-https/#how-to-enable-or-disable-dns-over-https-in-your-browsers) yine de tavsiye ederim. 
 
-## I have a router profile and a device profile. Which one does my device use?
-The device will use the profile set by the [NextDNS](https://nextdns.io/?from=xujj63g5) app or the installed [root CA](https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca). However, if the device has not been configured to use a separate profile, then it will use the wifi/router configuration.<sup>[1](https://www.reddit.com/r/nextdns/comments/yf4hnv/question_about_home_router_and_app_running_in/)</sup>
+## Bir yönlendirici profiline ve bir cihaz profiline sahibim. Cihazım hangisini kullanıyor?
+Cihaz [NextDNS](https://nextdns.io/?from=xujj63g5) uygulaması veya yüklü [root CA](https://help.nextdns.io/t/g9hmv0a/how-to-install-and-trust-nextdns-root-ca) tarafından ayarlanan profili kullanacaktır. Ancak, cihaz ayrı bir profil kullanacak şekilde yapılandırılmamışsa, wifi/yönlendirici yapılandırmasını kullanır.<sup>[1](https://www.reddit.com/r/nextdns/comments/yf4hnv/question_about_home_router_and_app_running_in/)</sup>
 
-## What is the difference between security, privacy, and anonymity?
-See [article](https://thenewoil.org/en/guides/prologue/secprivanon/) | [video](https://www.youtube.com/watch?v=Wpkh-hfULgE)
+## Güvenlik, gizlilik ve anonimlik arasındaki fark nedir?
+[makale](https://guvendekal.org/#/mahremiyet?id=mahremiyet-g%c3%bcvenlik-ve-anonimlik) | [video](https://youtu.be/MJ-ekgoQrOM?si=p3KHhcCG6suteXfS&t=70)
 
-## Does NextDNS hide activity from my Internet Service Provider (ISP)?
-Encrypted DNS queries boost privacy and security. This encryption stops your ISP from seeing what websites you search for and visit.
+## NextDNS, İnternet Servis Sağlayıcımdan (İSS) gelen etkinlikleri gizliyor mu?
+Şifrelenmiş DNS sorguları gizliliği ve güvenliği artırır. Bu şifreleme, İSS'nizin hangi web sitelerini aradığınızı ve ziyaret ettiğinizi görmesini engeller.
 
-However, encrypted DNS does not hide website IP addresses from your ISP. While your ISP cannot see the specific domain you want to access, they can see that you contact DNS servers like Cloudflare or AWS. If you repeatedly send data to a certain IP address, your ISP can guess you are visiting a website at that address.
 
-## Do I need a VPN?
-IVPN [argues](https://www.ivpn.net/blog/why-you-dont-need-a-vpn/) you only need a VPN for three reasons. Mainly, in order to:
+Ancak şifrelenmiş DNS, web sitesi IP adreslerini İSS'nizden gizlemez. İSS'niz erişmek istediğiniz belirli etki alanını göremese de Cloudflare veya AWS gibi DNS sunucularına başvurduğunuzu görebilir. Belirli bir IP adresine tekrar tekrar veri gönderirseniz, İSS'niz bu adresteki bir web sitesini ziyaret ettiğinizi tahmin edebilir.
+Şifrelenmiş DNS sorguları gizliliği ve güvenliği artırır. Bu şifreleme, İSS'nizin hangi web sitelerini aradığınızı ve ziyaret ettiğinizi görmesini engeller.
 
-1. Hide your real IP address from websites and peer-to-peer networks, which prevents ISPs and mobile carriers from tracking your online activity.
+## VPN'e ihtiyacım var mı?
+IVPN [argues](https://www.ivpn.net/blog/why-you-dont-need-a-vpn/) sadece üç nedenden dolayı bir VPN'e ihtiyacınız vardır. Temel olarak, aşağıdakiler için
 
-2. Guard against [man in the middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) and other [common attacks](https://en.wikipedia.org/wiki/Evil_twin_(wireless_networks)) on public Wi-Fi networks in places like airports, hotels, cafes, and libraries.
 
-3. Bypass censorship or geographic restrictions, allowing you to access blocked websites and content.
+1. Gerçek IP adresinizi web sitelerinden ve eşler arası ağlardan gizleyerek İSS'lerin ve mobil operatörlerin çevrimiçi etkinliğinizi izlemesini önler.
 
-Ultimately, you don't need a VPN unless your [threat model](https://thenewoil.org/en/guides/prologue/threat-model/) demands it. Here are VPN suggestions from [Techlore](https://www.techlore.tech/vpn.html) and [Tom Spark Reviews](https://www.vpntierlist.com/vpn-tier-list-2024) if it does.
+
+2. [ortadaki adam](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) ve diğer [yaygın saldırılar](https://en.wikipedia.org/wiki/Evil_twin_(wireless_networks)) havaalanları, oteller, kafeler ve kütüphaneler gibi yerlerdeki halka açık Wi-Fi ağlarına.
+
+
+3. Sansürü veya coğrafi kısıtlamaları atlayarak engellenen web sitelerine ve içeriğe erişmenizi sağlar.
+
+Sonuç olarak, [tehdit modeliniz](https://thenewoil.org/en/guides/prologue/threat-model/) gerektirmediği sürece bir VPN'e ihtiyacınız yoktur. İşte [Techlore](https://www.techlore.tech/vpn.html) ve [Tom Spark Reviews](https://www.vpntierlist.com/vpn-tier-list-2024)'den VPN önerileri.
 
 ***
-# Mentions :books:
+# Bahsedenler :books:
 
-### User Comments
-* See [here](https://socialgrep.com/search?query=yokoffing%2Cnextdns)
+### Kullanıcı Yorumları
+* [buraya bakın](https://socialgrep.com/search?query=yokoffing%2Cnextdns)
 
 ### YouTube
 * [The ULTIMATE Guide to Mastering NextDNS!](https://www.youtube.com/watch?v=WUG57ynLb8I&t=2230s) | [clarifications](https://github.com/techlore/channel-content/issues/43) (July 2023) 
 
-### Articles
+### makaleler
 * [Knot Resolver — with ad blocking](https://blog.cavelab.dev/2022/12/knot-resolver-ad-blocking/) (Dec 2022)
 * [Privacy Toolkit: NextDNS](https://stephenbolen.com/privacy-toolkit-nextdns/#:~:text=I%20found%20a%20wonderful%20guide%20on%20GitHub%20that%20walks%20through%20the%20optimal%20NextDNS%20configuration) (Sept 2022)
 
-### Guides
+### Rehberler
 * [A comprehensive guide to setting up NextDNS](https://itsjake.me/blog/a-comprehensive-guide-to-setting-up-nextdns/) (Sept 2023)
 * [FMHY: DNS Adblocking](https://github.com/nbats/FMHYedit/blob/main/AdblockVPNGuide.md#-dns-adblocking) → NextDNS → Guide
 * [hagezi/dns-blocklists](https://github.com/hagezi/dns-blocklists#department_store-nextdns---limited-freepaid-) → Online DNS Services
 
-### Contributions
+### Katkıda Bulunanlar
 * [Hagezi](https://github.com/hagezi/dns-blocklists/issues?q=author%3Ayokoffing) | [mentions](https://github.com/hagezi/dns-blocklists/issues?q=mentions%3Ayokoffing)
 * [1Hosts](https://github.com/badmojr/1Hosts/issues?q=author%3Ayokoffing)
 * [Easylist](https://github.com/easylist/easylist/issues?q=author%3Ayokoffing)
