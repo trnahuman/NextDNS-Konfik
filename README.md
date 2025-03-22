@@ -1,78 +1,73 @@
-[![GitHub issues](https://img.shields.io/github/issues/yokoffing/NextDNS-Config)](https://github.com/yokoffing/NextDNS-Config/issues)
-![GitHub](https://img.shields.io/github/license/yokoffing/NextDNS-Config?color=blue)
-![GitHub Maintained](https://img.shields.io/badge/Open%20Source-Yes-green)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/yokoffing/NextDNS-Config)
-![GitHub last commit](https://img.shields.io/github/last-commit/yokoffing/NextDNS-Config)
-![GitHub Maintained](https://img.shields.io/badge/maintained-yes-green)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyokoffing%2FNextDNS-Config&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)    
-
-***
-# Guidelines :bookmark:
-1) Prevent overblocking by utilizing the [law of diminishing returns]() (e.g., using [sane](https://www.privacyguides.org/en/basics/threat-modeling/), quality [blocklists](https://github.com/yokoffing/NextDNS-Config#blocklists-1); allowing most [TLDs](https://github.com/yokoffing/NextDNS-Config#block-top-level-domains-tlds-1-2-3-4-5-); etc.).
-2) Pass the [girlfriend test](https://www.urbandictionary.com/define.php?term=Grandma%20Test) with few exceptions. These deviations are documented throughout the guide.
-
-***
-
-## Create your account
-
-Sign up for NextDNS [here](https://nextdns.io/?from=xujj63g5) and support this page!
-
-***
-
-# Security :police_officer:
-
-Security settings protect your data from harm, theft, and unauthorized use.<sup>*^[why does this matter?](https://thenewoil.org/en/guides/prologue/why)*</sup>
-
-## Threat Intelligence Feeds <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/threat-intelligence-feeds.json)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Use Threat Intelligence Feeds
-## AI-Driven Threat Detection <sup><sup>[1](https://x.com/NextDNS/status/1440291577713233925)</sup></sup>
 > [!NOTE]
-> NextDNS labels this feature as [beta](https://www.vocabulary.com/dictionary/beta), although most users report it works well.
+>  I HAVE NOT MADE ANY CHANGES FROM THE MAIN GUIDE, THIS IS ONLY THE TURKISH VERSION, YOU CAN GO TO THE MAIN GUIDE [HERE](https://github.com/yokoffing/NextDNS-Config)
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable AI-Driven Threat Detection
+***
+# Kılavuz ilkeler :bookmark:
+1) [Azalan getiriler yasasını]() kullanarak aşırı engellemeyi önleyin (örneğin, [aklı başında](https://www.privacyguides.org/en/basics/threat-modeling/), kaliteli [blok listeleri](https://github.com/yokoffing/NextDNS-Config#blocklists-1) kullanmak; çoğu [TLD'ye](https://github.com/yokoffing/NextDNS-Config#block-top-level-domains-tlds-1-2-3-4-5-);izin vermek vesaire.).
+2) Birkaç istisna dışında [kız arkadaş testini](https://www.urbandictionary.com/define.php?term=Grandma%20Test) geçin. Bu sapmalar kılavuz boyunca belgelenmiştir.
 
-## Google Safe Browsing <sup><sup> [1](https://safebrowsing.google.com/safebrowsing/report_general/) [2](https://blog.cryptographyengineering.com/2019/10/13/dear-apple-safe-browsing-might-not-be-that-safe/) [3](https://the8-bit.com/apple-proxies-google-safe-browsing-privacy/) [4](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers) </sup></sup>
+***
+
+## Hesabınızı oluşturun
+
+NextDNS için kayıt olun [buradan](https://nextdns.io/?from=xujj63g5) ve yokoffing'nin hazırladığı kılavuza destek olun!
+
+***
+
+# Güvenlik :police_officer:
+
+Güvenlik ayarları verilerinizi zarara, hırsızlığa ve yetkisiz kullanıma karşı korur.<sup>*^[Neden bu önemli?](https://thenewoil.org/en/guides/prologue/why)*</sup>
+
+## Tehdit İstihbaratı Beslemeleri <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/threat-intelligence-feeds.json)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Tehdit istihbaratı beslemelerini kullan
+## Yapay Zekâ Destekli Tehdit Algılama <sup><sup>[1](https://x.com/NextDNS/status/1440291577713233925)</sup></sup>
+> [!NOTE]
+> NextDNS bu özelliği [beta](https://www.vocabulary.com/dictionary/beta) olarak etiketliyor, ancak çoğu kullanıcı iyi çalıştığını bildiriyor.
+
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Yapay zekâ destekli tehdit algılamayı etkinleştir
+
+## Google Güvenli Tarama <sup><sup> [1](https://safebrowsing.google.com/safebrowsing/report_general/) [2](https://blog.cryptographyengineering.com/2019/10/13/dear-apple-safe-browsing-might-not-be-that-safe/) [3](https://the8-bit.com/apple-proxies-google-safe-browsing-privacy/) [4](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers) </sup></sup>
 > [!TIP]
-> Unlike the version embedded in some browsers, this feature does not associate your public IP address to threats and does not allow bypassing the block. 
+> Bazı tarayıcılarda yerleşik olarak bulunan sürümün aksine, bu özellik genel IP adresinizi tehditlerle ilişkilendirmez ve engellemenin atlanmasına izin vermez. 
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Google Safe Browsing
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Google Güvenli Tarama'yı etkinleştir
 
-## Cryptojacking Protection <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/cryptojacking.json)</sup></sup>
+## Kripto Korsanlık (Cryptojacking) Koruması <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/cryptojacking.json)</sup></sup>
 > [!CAUTION]
-> Leave this feature enabled if you use something other than the [recommended blocklists](https://github.com/yokoffing/NextDNS-Config#privacy-lock) (see https://github.com/yokoffing/NextDNS-Config/issues/31).
+> [Önerilen blok listeleri](https://github.com/yokoffing/NextDNS-Config#privacy-lock) dışında bir şey kullanıyorsanız bu özelliği etkin bırakın (bkz. https://github.com/yokoffing/NextDNS-Config/issues/31).
 
-![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Enable Cryptojacking Protection
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Kripto korsanlık korumasını etkinleştir
 
-## DNS Rebinding Protection <sup><sup>[1](https://help.nextdns.io/t/35hmval/what-is-dns-rebinding-protection) [2](https://www.reddit.com/r/nextdns/comments/t0ne8r/does_dns_rebinding_protection_block_remote_access/?context=3)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg)  Enable DNS Rebinding Protection
+## DNS Rebinding Koruması <sup><sup>[1](https://help.nextdns.io/t/35hmval/what-is-dns-rebinding-protection) [2](https://www.reddit.com/r/nextdns/comments/t0ne8r/does_dns_rebinding_protection_block_remote_access/?context=3)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg)  DNS rebinding korumasını etkinleştir
 
-## IDN Homograph Attacks Protection <sup><sup>[1](https://web.archive.org/web/20230325073817/https://blog.riotsecurityteam.com/idn-homograph-attacksprevention) [2](https://akamai.com/blog/security/watch-your-step-the-prevalence-of-idn-homograph-attacks)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Homograph Attacks Protection
+## IDN Eşyazımı Saldırı Koruması <sup><sup>[1](https://web.archive.org/web/20230325073817/https://blog.riotsecurityteam.com/idn-homograph-attacksprevention) [2](https://akamai.com/blog/security/watch-your-step-the-prevalence-of-idn-homograph-attacks)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) IDN eşyazımı saldırı korumasını etkinleştir
 
-## Typosquatting Protection <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/typosquatting/protected-domains)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Typosquatting Protection
-## Domain Generation Algorithms (DGAs) Protection
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable DGA Protection
-## Block Newly Registered Domains (NRDs) <sup><sup>[1](https://boldgrid.com/instagram-influencer-accounts-are-being-hacked-phishing-attacks) </sup></sup>
+## Yanlış Siteye Yönlendirme Koruması <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/typosquatting/protected-domains)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Yanlış siteye yönlendirme korumasını etkinleştir
+## Alan Adı Oluşturma Algoritmaları (DGA) Koruması
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) DGA korumasını etkinleştir
+## Yeni Kaydedilmiş Alan Adlarını (NRD'ler) Engelle <sup><sup>[1](https://boldgrid.com/instagram-influencer-accounts-are-being-hacked-phishing-attacks) </sup></sup>
 > [!WARNING]
-> Blocking NRDs may cause [false positives](https://csrc.nist.gov/glossary/term/false_positive) [occasionally](https://www.reddit.com/r/InternetIsBeautiful/comments/w2wdro/comment/iguvg8y/?context=3). Be selective when adding NRDs to your allowlist; and, if you do, **NEVER** give [sensitive information](https://egnyte.com/guides/governance/sensitive-information) to a NRD. *If you plan to [set-and-forget](https://glosbe.com/en/en/set-and-forget) your configuration, disable this setting.*
+> NRD'leri engellemek [yanlış pozitiflere](https://csrc.nist.gov/glossary/term/false_positive) [bazen](https://www.reddit.com/r/InternetIsBeautiful/comments/w2wdro/comment/iguvg8y/?context=3) neden olabilir. NRD'leri izin listenize eklerken seçici olun; ve eğer eklerseniz, **ASLA** bir NRD'ye [hassas bilgi](https://egnyte.com/guides/governance/sensitive-information) vermeyin. *Yapılandırmanızı [kur ve unut](https://glosbe.com/en/en/set-and-forget) yapmayı planlıyorsanız, bu ayarı devre dışı bırakın.*
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Block Newly Registered Domains (NRDs)
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Yeni kayıt edilmiş alan adlarını (NRD'ler) engelle
 
-## Block Dynamic DNS Hostnames <sup><sup>[1](https://github.com/nextdns/ddns-domains/blob/main/suffixes) [2](https://x.com/NextDNS/status/1541740963760144386) </sup></sup>
+## Dinamik DNS Ana Bilgisayar Adlarını Engelle <sup><sup>[1](https://github.com/nextdns/ddns-domains/blob/main/suffixes) [2](https://x.com/NextDNS/status/1541740963760144386) </sup></sup>
 > [!TIP]
-> Dynamic DNS (DDNS) services can still access their own website and update API when you use this setting.
+> Dinamik DNS (DDNS) hizmetleri, bu ayarı kullandığınızda kendi web sitelerine erişmeye ve API'yi güncellemeye devam edebilir.
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Enable Block Dynamic DNS Hostnames
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Dinamik DNS ana bilgisayar adlarını engelle
 
-## Block Parked Domains <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/parked-domains-cname)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Block Parked Domains
-## Block Top-Level Domains (TLDs) <sup><sup>[1](https://webtribunal.net/blog/tld-statistics/) [2](https://www.spamhaus.org/reputation-statistics/cctlds/domains/) [3](https://bleepingcomputer.com/news/security/verified-twitter-accounts-hacked-to-send-fake-suspension-notices/) [4](https://github.com/DandelionSprout/adfilt/blob/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt) [5](https://github.com/DandelionSprout/adfilt/issues/659#issuecomment-1284845803) </sup></sup>
+## Park Edilmiş Alan Adlarını Engelle <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/parked-domains-cname)</sup></sup>
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Park edilmiş alan adlarını engelle
+## Üst Seviye Alan Adlarını (TLD'ler) Engelle <sup><sup>[1](https://webtribunal.net/blog/tld-statistics/) [2](https://www.spamhaus.org/reputation-statistics/cctlds/domains/) [3](https://bleepingcomputer.com/news/security/verified-twitter-accounts-hacked-to-send-fake-suspension-notices/) [4](https://github.com/DandelionSprout/adfilt/blob/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt) [5](https://github.com/DandelionSprout/adfilt/issues/659#issuecomment-1284845803) </sup></sup>
 
 > [!IMPORTANT]
-> Blocking [TLDs](https://www.geeksforgeeks.org/components-of-a-url) risks blocking legitimate sites along with malicious ones, since this feature stops both site navigations and subrequests. However, the entries below should allow for everyday browsing while offering protection against commonly abused TLDs.
+> [TLD'leri](https://www.geeksforgeeks.org/components-of-a-url) engellemek, bu özellik hem site gezintilerini hem de alt istekleri durdurduğundan, kötü niyetli sitelerle birlikte yasal siteleri de engelleme riski taşır. Bununla birlikte, aşağıdaki girişler yaygın olarak kötüye kullanılan TLD'lere karşı koruma sağlarken günlük gezinmeye izin vermelidir.
 
-<details><summary>Click me to view TLDs</summary>
+<details><summary>TLD'leri görüntülemek için beni tıklayın</summary>
 
 ```
 .autos
@@ -103,10 +98,10 @@ Security settings protect your data from harm, theft, and unauthorized use.<sup>
 
 </details>
 
-You can find additional entries on [Most Abused TLDs](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#tlds), but you may need to [allowlist](https://github.com/yokoffing/NextDNS-Config#allowlist-white_check_mark) sites on occasion. *If you plan to [set-and-forget](https://glosbe.com/en/en/set-and-forget) your configuration, skip this step.*
+[Most Abused TLDs](https://github.com/hagezi/dns-blocklists?tab=readme-ov-file#tlds) adresinde ek girişler bulabilirsiniz, ancak zaman zaman siteleri [allowlist](https://github.com/yokoffing/NextDNS-Config#allowlist-white_check_mark) yapmanız gerekebilir. *Yapılandırmanızı [ayarla ve unut](https://glosbe.com/en/en/set-and-forget) yapmayı planlıyorsanız, bu adımı atlayın.*
 
-## Block Child Sexual Abuse Material
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Block Child Sexual Abuse Material
+## Çocukların Cinsel İstismarına İlişkin Materyalleri Engelle
+![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Çocukların cinsel istismarına ilişkin materyalleri engelle
 
 ***
 
