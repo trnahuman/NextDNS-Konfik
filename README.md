@@ -218,7 +218,7 @@ Bir filtre listesinin [haywire](https://help.nextdns.io/t/m1hs207/energized-ulti
 
 	nextdns.io
 
-<details><summary>Click Daha çok girdi görmek için bana tıkla</summary>
+<details><summary>Daha çok girdi görmek için bana tıkla</summary>
 
 ### Facebook / Instagram <sup><sup>[1](https://github.com/jerryn70/GoodbyeAds/issues/309)</sup></sup> 
 
