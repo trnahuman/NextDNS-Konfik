@@ -1,5 +1,5 @@
 > [!NOTE]
->  I HAVE NOT MADE ANY CHANGES FROM THE MAIN GUIDE, THIS IS JUST TURKISH VERSION, YOU CAN GO TO THE MAIN GUIDE [HERE](https://github.com/yokoffing/NextDNS-Config)
+>  THIS IS NOT WHAT YOU'RE LOOKING, THIS IS JUST TURKISH VERSION, YOU CAN GO TO THE MAIN GUIDE [HERE](https://github.com/yokoffing/NextDNS-Config)
 
 ***
 # Kılavuz ilkeler :bookmark:
