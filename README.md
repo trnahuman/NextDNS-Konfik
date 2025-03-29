@@ -19,18 +19,21 @@ NextDNS için kayıt olun [buradan](https://nextdns.io/?from=xujj63g5) ve yokoff
 Güvenlik ayarları verilerinizi zarara, hırsızlığa ve yetkisiz kullanıma karşı korur.<sup>*^[Neden bu önemli?](https://thenewoil.org/en/guides/prologue/why)*</sup>
 
 ## Tehdit İstihbaratı Beslemeleri <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/threat-intelligence-feeds.json)</sup></sup>
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Tehdit istihbaratı beslemelerini kullan
+> [!CAUTION]
+> Önerilen blok listeleri dışında bir şey kullanıyorsanız bu özelliği etkin bırakın (bkz. [#74](https://github.com/yokoffing/NextDNS-Config#privacy-lock).
+
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Tehdit istihbaratı beslemelerini kullan
 ## Yapay Zekâ Destekli Tehdit Algılama <sup><sup>[1](https://x.com/NextDNS/status/1440291577713233925)</sup></sup>
 > [!NOTE]
 > NextDNS bu özelliği [beta](https://www.vocabulary.com/dictionary/beta) olarak etiketliyor, ancak çoğu kullanıcı iyi çalıştığını bildiriyor.
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Yapay zekâ destekli tehdit algılamayı etkinleştir
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Yapay zekâ destekli tehdit algılamayı etkinleştir
 
 ## Google Güvenli Tarama <sup><sup> [1](https://safebrowsing.google.com/safebrowsing/report_general/) [2](https://blog.cryptographyengineering.com/2019/10/13/dear-apple-safe-browsing-might-not-be-that-safe/) [3](https://the8-bit.com/apple-proxies-google-safe-browsing-privacy/) [4](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers) </sup></sup>
-> [!TIP]
-> Bazı tarayıcılarda yerleşik olarak bulunan sürümün aksine, bu özellik genel IP adresinizi tehditlerle ilişkilendirmez ve engellemenin atlanmasına izin vermez. 
+> [!CAUTION]
+>  Google Güvenli Tarama, DNS düzeyinde bir engelleyici olarak tasarlanmamıştır ve yasal [CNAME](https://en.wikipedia.org/wiki/CNAME_record) alan adlarını dolandırıcılık olarak işaretleyebilir. NextDNS'in [yanlış pozitifleri](https://csrc.nist.gov/glossary/term/false_positive) kaldırması da aylar sürebilir.
 
-![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Google Güvenli Tarama'yı etkinleştir
+![Disabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/disabled.svg) Google Güvenli Tarama'yı etkinleştir
 
 ## Kripto Korsanlık (Cryptojacking) Koruması <sup><sup>[1](https://github.com/nextdns/metadata/blob/6f9b6cd0670e7e31ad2ca716742088c2fc0616c2/security/cryptojacking.json)</sup></sup>
 > [!CAUTION]
@@ -143,20 +146,7 @@ Diğer listelerin neden kullanılmadığını da merak edebilirsiniz. Bunun nede
 
 ## Yerel İzleme Koruması <sup><sup>[1](https://github.com/nextdns/native-tracking-domains/tree/main/domains)</sup></sup>
 
-Kullandığınız tüm cihaz markalarını ekleyin.
-
-<details>
-
-	Windows
-	Apple
-	Samsung
-	Xiaomi
-	Huawei
-	Amazon Alexa
-	Roku
-	Sonos
-
-</details>
+Bu liste yıllardır güncellenmedi o yüzden kullanmanızı tavsiye etmiyorum.
 
 ## Gizlenmiş Üçüncü Taraf İzleyicileri Engelle <sup><sup>[1](https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains) [2](https://www.reddit.com/r/nextdns/comments/10nenu3/disguised_trackers_are_blocked_regardless_of) [3](https://medium.com/nextdns/cname-cloaking-the-dangerous-disguise-of-third-party-trackers-195205dc522a) [4](https://arxiv.org/pdf/2102.09301.pdf) [5](https://tma.ifip.org/2020/wp-content/uploads/sites/9/2020/06/tma2020-camera-paper66.pdf) </sup></sup>
 ![Enabled](https://raw.githubusercontent.com/yokoffing/NextDNS-Config/main/icons/enabled.svg) Gizlenmiş üçüncü taraf izleyicileri engelle
